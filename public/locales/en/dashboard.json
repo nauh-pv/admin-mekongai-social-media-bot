@@ -1,0 +1,200 @@
+{
+  "action": "Action",
+  "dashboard": "Dashboard",
+  "pageManager": "Page Manager",
+  "page": "Page",
+  "config": "Config",
+  "identity": "Identity",
+  "procedure": "Procedure",
+  "fileManager": "File Manager",
+  "postManager": "Post Manager",
+  "commentManager": "Comment Manager",
+  "messageManager": "Message Manager",
+  "balance": "Balance",
+  "update": "Update",
+  "file": "File",
+  "name": "Name",
+  "role": "Role",
+  "amount": "Amount",
+  "transactionType": "Transaction Type",
+  "dateModified": "Date Modified",
+  "target": "Target",
+  "mission": "Mission",
+  "status": "Status",
+  "note": "Note",
+  "balanceTransaction": "Balance Transaction",
+  "tokenTransaction": "Token Transaction",
+  "completionTokens": "Completion Tokens",
+  "promptTokens": "Prompt Tokens",
+  "totalToken": "Total Token",
+  "time": "Time",
+  "message": "Message",
+  "totalBalance": "Total Balance",
+  "payment": "Payment",
+  "overviewBalance": "Overview Balance",
+  "pageManagerTable": {
+    "facebookAccount": "Facebook Account",
+    "file": "File",
+    "config": "Config",
+    "actionType": "Action Type",
+    "autoReply": "Auto"
+  },
+  "identityManager": {
+    "titleAdd": "Add New Identity",
+    "titleUpdate": "Update Identity",
+    "name": "Identity Name",
+    "info": "Info",
+    "story": "Story",
+    "styleConversation": "Style Conversation",
+    "exampleConversation": "Example Conversation",
+    "placeholderName": "Identity Name",
+    "placeholderInfo": "Personal information",
+    "placeholderStory": "Personal biography",
+    "placeholderStyleConversation": "How to Communicate and Behave",
+    "placeholderExampleConversation": "Example Conversation",
+    "labelRequired": "Required",
+    "descriptionName": "Provide a name for the identity",
+    "descriptionInfo": "Name, Gender, Year of Birth, Hometown, Current Address",
+    "descriptionStory": "Childhood, School, University, Current Work, etc.",
+    "descriptionStyleConversation": "Communication style and behavior",
+    "descriptionExampleConversation": "Example of communication and behavior",
+    "buttonCreate": "Create",
+    "buttonUpdate": "Update"
+  },
+  "modal": {
+    "deleteFile": {
+      "title": "Delete file",
+      "part1": "Do you really want to",
+      "delete": "delete",
+      "part2": "this"
+    },
+    "subscribeComment": {
+      "title": "Subscribe Comment",
+      "part1": "Do you want to sign up for automatic",
+      "comment": "comment",
+      "part2": "replies using AI?"
+    },
+    "unsubscribeComment": {
+      "title": "Unsubscribe Comment",
+      "part1": "Do you want to unsubscribe automatic",
+      "comment": "comment",
+      "part2": "replies using AI?"
+    },
+    "subscribeMessage": {
+      "title": "Subscribe Message",
+      "part1": "Do you want to sign up for automatic",
+      "message": "message",
+      "part2": "replies using AI?"
+    },
+    "unsubscribeMessage": {
+      "title": "Unsubscribe Message",
+      "part1": "Do you want to unsubscribe automatic",
+      "message": "message",
+      "part2": "replies using AI?"
+    }
+  },
+  "configManager": {
+    "addPageConfig": "Add Page Config",
+    "modalTitle": {
+      "add": "Add New Config",
+      "edit": "Update Config"
+    },
+    "fields": {
+      "configName": {
+        "placeholder": "Config Name",
+        "description": "Give the config a name"
+      },
+      "procedure": {
+        "placeholder": "Select a procedure",
+        "description": "Choose a procedure"
+      },
+      "identity": {
+        "placeholder": "Select an identity",
+        "description": "Choose an identity"
+      },
+      "role": {
+        "placeholder": "You are a sales consultant...",
+        "description": "Choose a role"
+      },
+      "target": {
+        "placeholder": "Provide professional and dedicated consulting services...",
+        "description": "What is the bot's goal?"
+      },
+      "mission": {
+        "placeholder": "Grasp information about products and services...",
+        "description": "What is the bot's mission? Provide a specific message."
+      },
+      "note": {
+        "placeholder": "Additional notes",
+        "description": "Add extra information"
+      }
+    }
+  },
+  "procedureManager": {
+    "titleAdd": "Add New Procedure",
+    "titleUpdate": "Update Procedure",
+    "procedureName": {
+      "label": "Procedure Name",
+      "placeholder": "Procedure Name",
+      "description": "Provide a name for the procedure"
+    },
+    "procedure": {
+      "label": "Procedure",
+      "placeholder": "Describe the procedure",
+      "description": "Provide detailed information about the procedure"
+    },
+    "labelRequired": "Required",
+    "buttonCreate": "Create",
+    "buttonUpdate": "Update"
+  },
+  "uploadFile": {
+    "title": "Upload file",
+    "okText": "Upload",
+    "cancelText": "Cancel",
+    "uploadInfo": "The file upload process may take 1 - 2 minutes",
+    "waitingInfo": "While waiting for the file to upload, you can ask our bot questions",
+    "supportedFormatsTitle": "Supported formats",
+    "supportedFormats": ".js, .py, .java, .cpp, .cc, .cxx, .c, .cs, .php, .rb, .swift, .ts, .go, .csv, .docx, .doc, .html, .md, .txt, .text, .log, .xlsx, .xls",
+    "uploadPrompt": "Upload file",
+    "selectedFile": "Selected file",
+    "languageTitle": "Choose language",
+    "errorFileExists": "The file already exists, please select another file!",
+    "errorInvalidFormat": "Please upload files in allowed formats.",
+    "successUpload": "Upload file success!",
+    "errorUpload": "Cannot upload file at the moment!",
+    "fileName": "File Name",
+    "category": "Category",
+    "size": "Size",
+    "dateModified": "Date Modified"
+  },
+  "schedulePost": {
+    "titleAdd": "Add New Posting Schedule",
+    "titleUpdate": "Update Posting Schedule",
+    "okTextAdd": "Add Schedule",
+    "okTextUpdate": "Update Schedule",
+    "loadingText": "Loading...",
+    "fields": {
+      "idea": {
+        "label": "Customer Idea",
+        "placeholder": "Enter customer idea"
+      },
+      "selectPage": {
+        "label": "Select Page / Group"
+      },
+      "time": {
+        "label": "Time"
+      },
+      "repeat": {
+        "label": "Repeat",
+        "customPlaceholder": "Days"
+      },
+      "iterations": {
+        "label": "Number of iterations"
+      },
+      "image": {
+        "label": "Image",
+        "selectImages": "Select Images"
+      }
+    }
+  }
+}

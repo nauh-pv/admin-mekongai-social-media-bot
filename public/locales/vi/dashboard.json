@@ -1,0 +1,200 @@
+{
+  "action": "Hành động",
+  "dashboard": "Bảng điều khiển",
+  "pageManager": "Quản lý trang",
+  "page": "Trang",
+  "config": "Cấu hình",
+  "identity": "Nhân dạng",
+  "procedure": "Quy trình",
+  "fileManager": "Quản lý tệp",
+  "postManager": "Quản lý bài viết",
+  "commentManager": "Quản lý bình luận",
+  "messageManager": "Quản lý tin nhắn",
+  "balance": "Số dư",
+  "update": "Cập nhật",
+  "file": "Tệp",
+  "name": "Tên",
+  "role": "Vai trò",
+  "amount": "Số tiền",
+  "transactionType": "Loại giao dịch",
+  "dateModified": "Ngày chỉnh sửa",
+  "target": "Mục tiêu",
+  "mission": "Nhiệm vụ",
+  "status": "Trạng thái",
+  "note": "Ghi chú",
+  "balanceTransaction": "Giao dịch số dư",
+  "tokenTransaction": "Giao dịch token",
+  "completionTokens": "Hoàn thành Tokens",
+  "promptTokens": "Tokens nhắc nhở",
+  "totalToken": "Tổng Token",
+  "time": "Thời gian",
+  "message": "Tin nhắn",
+  "totalBalance": "Tổng số dư",
+  "payment": "Thanh toán",
+  "overviewBalance": "Tổng quan số dư",
+  "pageManagerTable": {
+    "facebookAccount": "Tài khoản Facebook",
+    "file": "Tệp",
+    "config": "Cấu hình",
+    "actionType": "Loại hành động",
+    "autoReply": "Tự động trả lời"
+  },
+  "identityManager": {
+    "titleAdd": "Thêm Nhân Dạng Mới",
+    "titleUpdate": "Cập Nhật Nhân Dạng",
+    "name": "Tên Nhân Dạng",
+    "info": "Thông Tin",
+    "story": "Câu Chuyện",
+    "styleConversation": "Phong Cách Giao Tiếp",
+    "exampleConversation": "Ví Dụ Giao Tiếp",
+    "placeholderName": "Tên Nhân Dạng",
+    "placeholderInfo": "Thông tin cá nhân",
+    "placeholderStory": "Tiểu sử cá nhân",
+    "placeholderStyleConversation": "Cách Giao Tiếp và Hành Xử",
+    "placeholderExampleConversation": "Ví dụ giao tiếp",
+    "labelRequired": "Bắt buộc",
+    "descriptionName": "Cung cấp tên cho nhân dạng",
+    "descriptionInfo": "Tên, Giới tính, Năm sinh, Quê quán, Địa chỉ hiện tại",
+    "descriptionStory": "Thời thơ ấu, Trường học, Đại học, Công việc hiện tại, v.v.",
+    "descriptionStyleConversation": "Phong cách giao tiếp và hành vi",
+    "descriptionExampleConversation": "Ví dụ về giao tiếp và hành vi",
+    "buttonCreate": "Tạo mới",
+    "buttonUpdate": "Cập nhật"
+  },
+  "modal": {
+    "deleteFile": {
+      "title": "Xóa tệp",
+      "part1": "Bạn có thực sự muốn",
+      "delete": "xóa",
+      "part2": "tệp này không"
+    },
+    "subscribeComment": {
+      "title": "Đăng ký bình luận",
+      "part1": "Bạn có muốn đăng ký tự động",
+      "comment": "bình luận",
+      "part2": "bằng AI không?"
+    },
+    "unsubscribeComment": {
+      "title": "Hủy đăng ký bình luận",
+      "part1": "Bạn có muốn hủy đăng ký tự động",
+      "comment": "bình luận",
+      "part2": "bằng AI không?"
+    },
+    "subscribeMessage": {
+      "title": "Đăng ký tin nhắn",
+      "part1": "Bạn có muốn đăng ký tự động",
+      "message": "tin nhắn",
+      "part2": "bằng AI không?"
+    },
+    "unsubscribeMessage": {
+      "title": "Hủy đăng ký tin nhắn",
+      "part1": "Bạn có muốn hủy đăng ký tự động",
+      "message": "tin nhắn",
+      "part2": "bằng AI không?"
+    }
+  },
+  "configManager": {
+    "addPageConfig": "Thêm cấu hình trang",
+    "modalTitle": {
+      "add": "Thêm cấu hình mới",
+      "edit": "Cập nhật cấu hình"
+    },
+    "fields": {
+      "configName": {
+        "placeholder": "Tên cấu hình",
+        "description": "Đặt tên cho cấu hình"
+      },
+      "procedure": {
+        "placeholder": "Chọn một quy trình",
+        "description": "Chọn một quy trình"
+      },
+      "identity": {
+        "placeholder": "Chọn một nhân dạng",
+        "description": "Chọn một nhân dạng"
+      },
+      "role": {
+        "placeholder": "Bạn là một chuyên viên tư vấn bán hàng...",
+        "description": "Chọn vai trò"
+      },
+      "target": {
+        "placeholder": "Cung cấp dịch vụ tư vấn chuyên nghiệp và tận tâm...",
+        "description": "Mục tiêu của bot là gì?"
+      },
+      "mission": {
+        "placeholder": "Nắm bắt thông tin về sản phẩm và dịch vụ...",
+        "description": "Nhiệm vụ của bot là gì? Hãy đưa ra một thông điệp cụ thể."
+      },
+      "note": {
+        "placeholder": "Ghi chú thêm",
+        "description": "Thêm thông tin bổ sung"
+      }
+    }
+  },
+  "procedureManager": {
+    "titleAdd": "Thêm Quy Trình Mới",
+    "titleUpdate": "Cập Nhật Quy Trình",
+    "procedureName": {
+      "label": "Tên Quy Trình",
+      "placeholder": "Tên Quy Trình",
+      "description": "Cung cấp tên cho quy trình"
+    },
+    "procedure": {
+      "label": "Quy Trình",
+      "placeholder": "Mô tả quy trình",
+      "description": "Cung cấp thông tin chi tiết về quy trình"
+    },
+    "labelRequired": "Bắt buộc",
+    "buttonCreate": "Tạo mới",
+    "buttonUpdate": "Cập nhật"
+  },
+  "uploadFile": {
+    "title": "Tải lên tệp",
+    "okText": "Tải lên",
+    "cancelText": "Hủy",
+    "uploadInfo": "Quá trình tải lên tệp có thể mất từ 1 - 2 phút",
+    "waitingInfo": "Trong khi chờ tệp được tải lên, bạn có thể hỏi bot của chúng tôi",
+    "supportedFormatsTitle": "Định dạng được hỗ trợ",
+    "supportedFormats": ".js, .py, .java, .cpp, .cc, .cxx, .c, .cs, .php, .rb, .swift, .ts, .go, .csv, .docx, .doc, .html, .md, .txt, .text, .log, .xlsx, .xls",
+    "uploadPrompt": "Tải lên tệp",
+    "selectedFile": "Tệp đã chọn",
+    "languageTitle": "Chọn ngôn ngữ",
+    "errorFileExists": "Tệp đã tồn tại, vui lòng chọn tệp khác!",
+    "errorInvalidFormat": "Vui lòng tải lên tệp đúng định dạng.",
+    "successUpload": "Tải lên tệp thành công!",
+    "errorUpload": "Không thể tải tệp ngay bây giờ!",
+    "fileName": "Tên tệp",
+    "category": "Thể loại",
+    "size": "Kích thước",
+    "dateModified": "Ngày chỉnh sửa"
+  },
+  "schedulePost": {
+    "titleAdd": "Thêm Lịch Đăng Bài Mới",
+    "titleUpdate": "Cập Nhật Lịch Đăng Bài",
+    "okTextAdd": "Thêm Lịch Đăng",
+    "okTextUpdate": "Cập Nhật Lịch",
+    "loadingText": "Đang tải...",
+    "fields": {
+      "idea": {
+        "label": "Ý tưởng khách hàng",
+        "placeholder": "Nhập ý tưởng khách hàng"
+      },
+      "selectPage": {
+        "label": "Chọn Trang / Nhóm"
+      },
+      "time": {
+        "label": "Thời gian"
+      },
+      "repeat": {
+        "label": "Lặp lại",
+        "customPlaceholder": "Ngày"
+      },
+      "iterations": {
+        "label": "Số lần lặp"
+      },
+      "image": {
+        "label": "Hình ảnh",
+        "selectImages": "Chọn Hình Ảnh"
+      }
+    }
+  }
+}

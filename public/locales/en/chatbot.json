@@ -1,0 +1,72 @@
+{
+  "newChat": "New Chat",
+  "hi": "Hi",
+  "startChat": "Start Chat",
+  "whatCanIDo": "What can I do for you?",
+  "letsTry": "Let's try",
+  "briefDescription": "Brief description",
+  "listTemperature": [
+    {
+      "label": "Exactly",
+      "value": 0,
+      "itemKey": 0,
+      "description": "This mode ensures the chatbot answers verbatim based on the PDF content, guaranteeing absolute accuracy. Customers will receive information exactly as it appears in the file, with no changes or interpretations."
+    },
+    {
+      "label": "Stable",
+      "value": 0.5,
+      "itemKey": 1,
+      "description": "This mode allows the chatbot to rephrase the information slightly while maintaining the original meaning. Information from the PDF will be presented more understandably while still being stable and accurate."
+    },
+    {
+      "label": "Flexible",
+      "value": 0.7,
+      "itemKey": 2,
+      "description": "With this mode, the chatbot strikes a balance between retaining the PDF information and reinterpreting it to make it more accessible. This ensures the information is accurate, understandable, and highly applicable."
+    },
+    {
+      "label": "Creative",
+      "value": 1,
+      "itemKey": 3,
+      "description": "This mode enables the chatbot to express the PDF content in a more creative and flexible way. Instead of giving verbatim answers, the chatbot can reinterpret the information uniquely, offering customers a fresh perspective."
+    }
+  ],
+  "optionChatMarketing": [
+    {
+      "label": "Have an idea",
+      "description": "Provide me with your idea, and I will give you an SEO-optimized article.",
+      "image": "",
+      "rotate": "left",
+      "key": 2
+    },
+    {
+      "label": "No idea",
+      "description": "Let me help you come up with an idea.",
+      "image": "",
+      "rotate": "right",
+      "key": 3
+    }
+  ],
+  "introduceFullDocsImage": {
+    "who": "I'm Full Docs Chatbot Image",
+    "feature": [
+      {
+        "title": "File upload",
+        "description": "Users can upload text files from their devices for quoting."
+      },
+      {
+        "title": "Full-text analysis",
+        "description": "The chatbot can analyze the entire content of the file, extracting important information."
+      },
+      {
+        "title": "Extraction and summarization",
+        "description": "The chatbot can extract key passages and provide summaries of the content."
+      },
+      {
+        "title": "Detailed question answering",
+        "description": "Users can ask detailed questions related to the file's content and receive accurate answers from the chatbot."
+      }
+    ],
+    "description": "Our Full Docs Chatbot allows users to upload and analyze entire text files, providing deep and detailed interaction capabilities."
+  }
+}

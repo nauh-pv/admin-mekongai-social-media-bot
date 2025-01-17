@@ -1,0 +1,66 @@
+{
+  "listTemperature": [
+    {
+      "label": "Exactly",
+      "value": 0,
+      "itemKey": 0,
+      "description": "Chế độ này giúp chatbot trả lời nguyên văn những gì có trong file PDF, đảm bảo độ chính xác tuyệt đối. Khách hàng sẽ nhận được thông tin chính xác theo đúng ngữ liệu trong file, không có bất kỳ sự thay đổi hay diễn giải nào."
+    },
+    {
+      "label": "Stable",
+      "value": 0.5,
+      "itemKey": 1,
+      "description": "Chế độ này cho phép chatbot diễn đạt lại thông tin một cách nhẹ nhàng hơn nhưng vẫn giữ nguyên ý chính. Thông tin từ PDF sẽ được trình bày một cách dễ hiểu hơn, nhưng vẫn duy trì sự ổn định và chính xác."
+    },
+    {
+      "label": "Flexible",
+      "value": 0.7,
+      "itemKey": 2,
+      "description": "Với chế độ này, chatbot sẽ kết hợp giữa việc giữ nguyên thông tin trong PDF và việc diễn giải thông tin theo cách dễ tiếp cận hơn. Điều này giúp thông tin không chỉ chính xác mà còn dễ hiểu và có tính ứng dụng cao hơn."
+    },
+    {
+      "label": "Creative",
+      "value": 1,
+      "itemKey": 3,
+      "description": "Chế độ này cho phép chatbot diễn đạt thông tin từ PDF một cách sáng tạo và linh hoạt hơn. Thay vì chỉ đưa ra câu trả lời nguyên văn, chatbot có thể diễn giải thông tin theo cách độc đáo, giúp khách hàng có cái nhìn mới mẻ về nội dung."
+    }
+  ],
+  "optionChatMarketing": [
+    {
+      "label": "Đã có ý tưởng",
+      "description": "Hãy cho tôi ý tưởng, tôi sẽ đưa cho bạn một bài viết chuẩn SEO",
+      "image": "",
+      "rotate": "left",
+      "key": 2
+    },
+    {
+      "label": "Chưa có ý tưởng",
+      "description": "Để tôi giúp bạn đưa ra ý tưởng",
+      "image": "",
+      "rotate": "right",
+      "key": 3
+    }
+  ],
+  "introduceFullDocsImage": {
+    "who": "I'm Full Docs Chatbot Image",
+    "feature": [
+      {
+        "title": "File upload",
+        "description": "Users can upload text files from their devices for quoting."
+      },
+      {
+        "title": "Full-text analysis",
+        "description": "The chatbot can analyze the entire content of the file, extracting important information."
+      },
+      {
+        "title": "Extraction and summarization",
+        "description": "The chatbot can extract key passages and provide summaries of the content."
+      },
+      {
+        "title": "Detailed question answering",
+        "description": "Users can ask detailed questions related to the file's content and receive accurate answers from the chatbot."
+      }
+    ],
+    "description": "Our Full Docs Chatbot allows users to upload and analyze entire text files, providing deep and detailed interaction capabilities."
+  }
+}
