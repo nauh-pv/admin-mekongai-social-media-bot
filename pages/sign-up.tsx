@@ -82,7 +82,7 @@ const Signup = () => {
       if (res.status === 200) {
         message.success(res.data.message);
         setIsLoadingRegister(false);
-        router.push("/sign-in");
+        router.push("/");
       }
     } catch (e) {
       console.log(e);
@@ -321,14 +321,14 @@ const Signup = () => {
                               className="ps-2 form-check-label text-[#8c9097] dark:text-white/50 font-normal block"
                               htmlFor="defaultCheck1"
                             >
-                              By creating a account you agree to our{" "}
+                              By creating a account you agree to our
                               <Link
                                 href="/components/pages/terms&conditions/"
                                 className="text-success"
                               >
                                 <u>Terms &amp; Conditions</u>
-                              </Link>{" "}
-                              and{" "}
+                              </Link>
+                              and
                               <Link href="#!" className="text-success">
                                 <u>Privacy Policy</u>
                               </Link>
@@ -352,8 +352,8 @@ const Signup = () => {
                     </div>
                     <div className="text-center">
                       <p className="text-[0.75rem] text-[#8c9097] dark:text-white/50 mt-4">
-                        Already have an account?{" "}
-                        <Link href="/sign-in" className="text-primary">
+                        Already have an account?
+                        <Link href="/" className="text-primary">
                           Sign In
                         </Link>
                       </p>

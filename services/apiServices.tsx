@@ -43,7 +43,7 @@ const postRegisterAccount = (
 };
 
 const postLogin = (username: string, password: string) => {
-  return axios.post("login", {
+  return axios.post("login-partner", {
     username,
     password,
   });

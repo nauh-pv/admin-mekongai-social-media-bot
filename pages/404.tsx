@@ -26,7 +26,7 @@ const Error404 = () => {
                     </div>
                   </div>
                   <Link
-                    href="/"
+                    href="/admin-dashboard"
                     className="ti-btn bg-primary text-white font-semibold"
                   >
                     <i className="ri-arrow-left-line align-middle inline-block"></i>

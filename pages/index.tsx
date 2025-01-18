@@ -43,7 +43,7 @@ const Login = () => {
     setIsLoadingLogin(true);
     try {
       const res = await postLogin(username, password);
-
+      console.log(res);
       if (res.data.status === 200) {
         const accessToken: string = res.data.data.access_token;
         const decodedUser: decodedUser = jwtDecode<decodedUser>(accessToken);

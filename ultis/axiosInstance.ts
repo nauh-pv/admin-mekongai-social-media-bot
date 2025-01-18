@@ -112,30 +112,26 @@ axiosInstance.interceptors.response.use(
 
         store.dispatch(setUser(userData));
 
-        store.dispatch(setAccessToken(newAccessToken)); // Cập nhật `accessToken` trong Redux
+        store.dispatch(setAccessToken(newAccessToken));
 
-        // Cập nhật các request đang chờ với token mới
         processQueue(null, newAccessToken);
 
-        // Thêm token mới vào headers của request ban đầu
         if (originalRequest.headers) {
           originalRequest.headers["Authorization"] = `Bearer ${newAccessToken}`;
         }
 
-        // Gửi lại request ban đầu với `Access Token` mới
         return axiosInstance(originalRequest);
       } catch (err) {
         console.log("Lỗi khi làm mới token:", err);
 
-        // Nếu làm mới token thất bại, xóa accessToken khỏi Redux Store và chuyển hướng đến trang đăng nhập
         store.dispatch(clearAccessToken());
         localStorage.removeItem("accessToken");
         sessionStorage.removeItem("accessToken");
         processQueue(err, null);
-        // window.location.href = "/sign-in"; // Điều hướng đến trang đăng nhập
+        window.location.href = "/";
         return Promise.reject(err);
       } finally {
-        isRefreshing = false; // Đặt lại trạng thái `isRefreshing`
+        isRefreshing = false;
       }
     }
 
