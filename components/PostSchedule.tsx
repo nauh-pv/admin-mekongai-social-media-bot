@@ -4,7 +4,6 @@ import type { MenuProps } from "antd";
 import { CiSearch } from "react-icons/ci";
 import { DownOutlined, SettingOutlined } from "@ant-design/icons";
 import { Dropdown, message, Space, Tooltip } from "antd";
-import withAuth from "@/HOC/WithAuth";
 import AddNewSchedulePost from "@/modals/AddNewSchedulePost";
 import ButtonGradient from "./ButtonGradient";
 import { ClipLoader } from "react-spinners";
@@ -58,7 +57,6 @@ const PostSchedule = ({ t }: any) => {
   const { listImageUsingPost, setListImageUsingPost } = usePostingContext();
 
   const context = useAppContext();
-  const listAccountFB = context.listAccountFB;
   const items: MenuProps["items"] = [
     {
       key: "1",
@@ -332,24 +330,6 @@ const PostSchedule = ({ t }: any) => {
     return page ? page.label : "";
   };
 
-  const convertListFbToPageSelect = () => {
-    const listAccountFBNew = [...listAccountFB];
-    const listPageSelectNew = listAccountFBNew.flatMap((item) => {
-      return item.children.map((child: any) => {
-        return {
-          label: `${item.title} - ${child.title}`,
-          value: child.key,
-        };
-      });
-    });
-    return listPageSelectNew;
-  };
-
-  const fetchListPage = () => {
-    const listPage = convertListFbToPageSelect();
-    setListPageSelect(listPage);
-  };
-
   const handleViewPostScheduleItem = (record: PostScheduleItem) => {
     setIsEditMode(true);
     setIsOpenModalUploadFile(true);
@@ -413,10 +393,6 @@ const PostSchedule = ({ t }: any) => {
       }
     }
   }, [user, listPageSelect]);
-
-  useEffect(() => {
-    fetchListPage();
-  }, [listAccountFB]);
 
   return (
     <Fragment>
@@ -520,7 +496,5 @@ const PostSchedule = ({ t }: any) => {
   );
 };
 
-export default withAuth(PostSchedule, {
-  requiredRole: "user",
-  layout: "Contentlayout",
-});
+PostSchedule.layout = "Contentlayout";
+export default PostSchedule;

@@ -8,9 +8,6 @@ import { ClipLoader } from "react-spinners";
 import { message } from "antd";
 import TabSelect from "@/components/TabSelect";
 import { useRouter } from "next/router";
-import withAuth from "@/HOC/WithAuth";
-import { useSelector } from "react-redux";
-import { RootState } from "@/shared/redux/store";
 
 const Signup = () => {
   const [passwordshow1, setpasswordshow1] = useState(false);
@@ -396,4 +393,5 @@ const Signup = () => {
   );
 };
 
-export default withAuth(Signup);
+Signup.layout = "Authenticationlayout";
+export default Signup;

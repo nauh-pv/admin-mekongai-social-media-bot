@@ -1,5 +1,4 @@
 import TreeSelectPage from "@/components/TreeSelectPage";
-import withAuth from "@/HOC/WithAuth";
 import { useAppContext } from "@/shared/context/ContextApp";
 import {
   Customers,
