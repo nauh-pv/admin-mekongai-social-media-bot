@@ -5,7 +5,6 @@ import { clearAccessToken } from "@/shared/redux/authSlice";
 import { useRouter } from "next/router";
 import { message } from "antd";
 import { postLogout } from "@/services/apiServices";
-import { selectTotalBalance } from "@/shared/redux/payment/paymentSelector";
 import { RootState } from "@/shared/redux/store";
 interface BadgeProps {
   text: string;
@@ -44,12 +43,6 @@ const ProfileDropdown = ({ dropdownItems }: any) => {
     }
   };
 
-  const { totalBalance } = useSelector((state: RootState) => ({
-    totalBalance: selectTotalBalance(state),
-  }));
-
-  console.log("Check data dropdown:", dropdownItems);
-
   return (
     <div
       className="hs-dropdown-menu ti-dropdown-menu !-mt-3 border-0 w-[11rem] !p-0 border-defaultborder hidden main-header-dropdown pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
@@ -66,9 +59,7 @@ const ProfileDropdown = ({ dropdownItems }: any) => {
                 <i
                   className={`${item.icon} text-[1.125rem] me-2 opacity-[0.7]`}
                 ></i>
-                {item.label === "Bal"
-                  ? `${item.label}: ${totalBalance.toLocaleString("vi-VN")} VNĐ`
-                  : item.label}
+                {item.label}
                 {item.badge && (
                   <Badge
                     text={item.badge.text}

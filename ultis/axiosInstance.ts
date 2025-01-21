@@ -27,7 +27,8 @@ interface UserState {
   role: string;
 }
 const axiosInstance: AxiosInstance = axios.create({
-  baseURL: "https://social-media-bot.mekongai.com/",
+  baseURL: "http://127.0.0.1:8000/",
+  // baseURL: "https://social-media-bot.mekongai.com/",
   timeout: 100000,
   headers: {
     "Content-Type": "application/json",

@@ -440,5 +440,4 @@ const Login = () => {
   );
 };
 
-Login.layout = "Authenticationlayout";
 export default Login;

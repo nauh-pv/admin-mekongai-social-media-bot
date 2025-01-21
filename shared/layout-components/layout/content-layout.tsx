@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Sidebar from "../sidebar/sidebar";
-import SidebarUser from "../sidebarUser/sidebar";
 import { Provider } from "react-redux";
 import store from "@/shared/redux/store";
 import Header from "../header/header";
@@ -47,6 +46,7 @@ const ContentLayout = ({ children }: any) => {
 
   const user = store.getState().auth.user;
   const role = user?.role;
+  console.log("Dauy la role:", role);
 
   return (
     <Fragment>
@@ -55,7 +55,7 @@ const ContentLayout = ({ children }: any) => {
           <Switcher />
           <div className="page">
             <Header />
-            {role === "user" ? <SidebarUser /> : <Sidebar />}
+            <Sidebar />
             <div className="content">
               <div className="main-content" onClick={Bodyclickk}>
                 {children}
