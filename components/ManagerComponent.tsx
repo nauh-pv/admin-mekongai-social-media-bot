@@ -2,7 +2,6 @@ import Seo from "@/shared/layout-components/seo/seo";
 import React, { Fragment, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { Checkbox } from "antd";
-import withAuth from "@/HOC/WithAuth";
 import dynamic from "next/dynamic";
 import ModalConfirm from "@/modals/ModalConfirm";
 import TreeSelectPage from "./TreeSelectPage";
@@ -173,7 +172,5 @@ const ManagerComponent = ({
   );
 };
 
-export default withAuth(ManagerComponent, {
-  requiredRole: "user",
-  layout: "Contentlayout",
-});
+ManagerComponent.layout = "Contentlayout";
+export default ManagerComponent;

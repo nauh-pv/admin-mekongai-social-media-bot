@@ -9,7 +9,6 @@ import { setAccessToken, setUser } from "@/shared/redux/authSlice";
 import { ClipLoader } from "react-spinners";
 import { message } from "antd";
 import { jwtDecode } from "jwt-decode";
-import withAuth from "@/HOC/WithAuth";
 
 interface decodedUser {
   username: string;
@@ -441,4 +440,5 @@ const Login = () => {
   );
 };
 
-export default withAuth(Login);
+Login.layout = "Authenticationlayout";
+export default Login;
